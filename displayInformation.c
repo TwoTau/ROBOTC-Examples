@@ -33,24 +33,24 @@ void display() {
 
 task main() {
 	while(true) {
-    getJoystickSettings(joystick);
-    display();
-    
-    // Example code for using the variable whatitsdoing
-    if(joy1Btn(7)) { // LT
+		getJoystickSettings(joystick);
+		display();
+		
+		// Example code for using the variable whatitsdoing
+		if(joy1Btn(7)) { // LT
 			// Move Forward
-      whatitsdoing = "foreward";
-      motor[leftWheel] = 10;
-		  motor[rightWheel] = 10;
+			whatitsdoing = "foreward";
+			motor[leftWheel] = 10;
+			motor[rightWheel] = 10;
 		} else if(joy1Btn(8)) { // RT
 			// Move Backward
-      whatitsdoing = "backward";
-      motor[leftWheel] = -10;
-		  motor[rightWheel] = -10;
+			whatitsdoing = "backward";
+			motor[leftWheel] = -10;
+			motor[rightWheel] = -10;
 		} else {
-      whatitsdoing = "nothing";
-      motor[leftWheel] = 0;
-		  motor[rightWheel] = 0;
-    }
-  }
+			whatitsdoing = "nothing";
+			motor[leftWheel] = 0;
+			motor[rightWheel] = 0;
+		}
+	}
 }
