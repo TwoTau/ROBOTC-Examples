@@ -13,3 +13,18 @@ Use the compass, ultrasonic, and gyroscope sensors.
 Do stuff when buttons on a Logitech controller are pressed.
 
 Note: the controller needs to be connected via USB to your computer.
+
+## debugStreamExample.c
+Show some information on the debug stream on the computer.
+
+To view the debug stream, first go to `Window > Menu Level > Super User` then go to `Robot > Debugger Windows > Debug Stream`.
+
+**Note:** the button will be greyed out until you start the program
+
+## displayInformation.c
+Display some information / arbitrary text on the NXT's screen.
+
+## exampleSound.c
+Play the Mario Bros theme song.
+
+You can use [this converter](http://twotau.github.io/midi/) to convert your own notes into the correct format so that your robot can play it.
