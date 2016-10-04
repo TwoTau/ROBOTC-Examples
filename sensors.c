@@ -6,28 +6,23 @@
 // what the gyro value is when you first start the program. This is set in function main
 int defaultGyroValue = 0;
 
-int getCompass() 
-{
+int getCompass() {
   return SensorValue[compass];
 }
 
-int getSonar() 
-{
+int getSonar() {
   return SensorValue[sonar];
 }
 
-int getGyro() 
-{
+int getGyro() {
   return SensorValue[gyroscope] - defaultGyroValue;
 }
 
-task main() 
-{
-  defaultGyroValue = getGyro();
+task main() {
+  defaultGyroValue = getGyro(); //sets when the gyro will detect "flat"
   
   while(true) 
   {
-    // loop and do stuff
+    //do whatever
   }
-
 }
