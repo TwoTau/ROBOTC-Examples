@@ -1,0 +1,31 @@
+#pragma config(Motor,  motorA,          Arm,           tmotorNXT, PIDControl, encoder)
+
+task main()
+{
+  //resets timer
+  time100[T1] = 0;
+  //T1 is the first timer, there are 4 timers: T1, T2, T3, and T4
+  //time100 is the time in milliseconds
+  
+  //while timer is less than or equal to 8
+	while(time100[T1] <= 8)
+	{
+    //set motorspeed to 10
+		motor[Arm] = 10;
+	}
+  
+  //then stop the motor
+	motor[Arm] = 0;
+  
+  //resets timer
+  time100[T1] = 0;
+  
+  while(time100[T1] <= 8)
+	{
+    //set motorspeed to -10
+		motor[Arm] = -10;
+	}
+  
+  //then stop the motor
+	motor[Arm] = 0;
+}
