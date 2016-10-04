@@ -21,7 +21,7 @@ task main() {
 	int totalNotes = 96; // sets how many notes in total will be played (so the program knows where to stop playing notes)
 	int notes[96][2] = { // defines a 2d array of 96 notes and their lengths to be played
 		// a 2d array is defined like this: <type (int, float, bool, etc)> <name><[number of rows]><[number of columns]>
-		{76, 3}, //Line1   // {midiNoteNumber, lengthToBePlayed} // 76 midiNoteNumber corresponds to 4th E
+		{76, 3}, //Line1   // {midiNoteNumber, lengthToBePlayed} // 76 midiNoteNumber corresponds to 6th E
 		{76, 3},
 		{0, 3}, // note 0 = rest
 		{76, 3},
