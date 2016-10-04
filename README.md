@@ -9,10 +9,19 @@ Use the compass, ultrasonic, and gyroscope sensors.
 
 **Note: Incomplete**. The gyroscope returns rate of tilting, not the actual tilt, so we need to integrate it to get useful information.
 
+## sensorTest.c
+Makes sure all sensors are giving values.
+
+Useful for debugging.
+
 ## joystick.c
 Do stuff when buttons on a Logitech controller are pressed.
 
 Note: the controller needs to be connected via USB to your computer.
+
+Note: to open the joystick window, go to `Robot > LEGO Brick > Joystick Control - Basic`.
+
+Troubleshooting: If the controller is not showing an output, then reset the Primary Game Controller.
 
 ## debugStreamExample.c
 Show some information on the debug stream on the computer.
@@ -28,3 +37,6 @@ Display some information / arbitrary text on the NXT's screen.
 Play the Mario Bros theme song.
 
 You can use [this converter](http://twotau.github.io/midi/) to convert your own notes into the correct format so that your robot can play it.
+
+## timers.c
+Shows how to use timers.
