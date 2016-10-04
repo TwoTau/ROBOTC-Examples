@@ -9,6 +9,9 @@
 //looks for the Joystick and what the state of each button is
 #include "JoystickDriver.c"
 
+//to open the joystick window, go to Robot > LEGO Brick > Joystick Control - Basic
+//then set the Primary Game Controller to Logitech Dual Action
+
 task main() {
 	// sets the minimum threshold the joystick has to be moved
 	int minimum = 10;
