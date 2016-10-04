@@ -14,16 +14,16 @@
 
 #include "JoystickDriver.c"
 
-int threshold= 15;
+int threshold = 15;
 
 
 int limit(int input, int min, int max)
 {
-	if(input<min)
+	if(input < min)
 	{
 		return min;
 	}
-	if(input>max)
+	if(input > max)
 	{
 		return max;
 	}
@@ -31,36 +31,36 @@ int limit(int input, int min, int max)
 }
 void powLeft(int power)
 {
-	power=limit(power, 0, 100);
+	power = limit(power, 0, 100);
 	motor[motorD]=power;
 	motor[motorE]=power;
 }
 void powRight(int power)
 {
-	power=limit(power, 0, 100);
-	motor[motorF]=power;
-	motor[motorG]=power;
+	power = limit(power, 0, 100);
+	motor[motorF] = power;
+	motor[motorG] = power;
 }
 
 void initializeRobot()
 {
-	servo[servo1]=0;
-	servo[servo2]=0;
+	servo[servo1] = 0;
+	servo[servo2] = 0;
 }
 
 void iterate()
 {
 	getJoystickSettings(joystick);
 	//Main Drive
-	int left= joystick.joy1_y1/1.28;
-	int right= joystick.joy1_y2/1.28;
+	int left = joystick.joy1_y1 / 1.28;
+	int right = joystick.joy1_y2 / 1.28;
 	if(left<threshold)
 	{
-		left=0;
+		left = 0;
 	}
-	if(right<threshold)
+	if(right < threshold)
 	{
-		right=0;
+		right = 0;
 	}
 	powLeft(left);
 	powRight(right);
@@ -68,13 +68,13 @@ void iterate()
 	//Secondary Functions
 	if(joy1Btn(1))
 	{
-		servo[servo1]=0;
-		//servo[servo2]=0;
+		servo[servo1] = 0;
+		//servo[servo2] = 0;
 	}
 	if(joy1Btn(2))
 	{
-		servo[servo1]=60;
-		//servo[servo2]=127;
+		servo[servo1] = 60;
+		//servo[servo2] = 127;
 	}
 
 }
