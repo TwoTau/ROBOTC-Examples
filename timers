@@ -22,7 +22,7 @@ task main()
   
 	while(time100[T1] <= 8)
 	{
-    	//set motorspeed to -10
+		//set motorspeed to -10
 		motor[Arm] = -10;
 	}
 	
