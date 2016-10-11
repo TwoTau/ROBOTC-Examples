@@ -2,12 +2,12 @@
 Contains examples and guides on how to do things with NXT robots using ROBOTC.
 
 ## motors.c
-Move the robot and use shooting motors
+Move the robot and use shooting motors.
 
 ## sensors.c
 Use the compass, ultrasonic, and gyroscope sensors.
 
-**Note: Incomplete**. The gyroscope returns rate of tilting, not the actual tilt, so we need to integrate it to get useful information.
+**Note: Incomplete**. The gyroscope returns rate of tilting, not the actual tilt, so you'll need to integrate it to get useful information.
 
 ## sensorTest.c
 Makes sure all sensors are giving values.
@@ -38,5 +38,7 @@ Play the Mario Bros theme song.
 
 You can use [this converter](http://twotau.github.io/midi/) to convert your own notes into the correct format so that your robot can play it.
 
+**For more information, just visit [this website](https://newt.phys.unsw.edu.au/jw/notes.html)**
+
 ## timers.c
-Shows how to use timers.
+Shows the basics on how to use timers.
